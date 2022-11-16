@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonie</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <marquee behavior="alternate" direction="right">Enter a number to determine its network</marquee>
+        <h2> Phonie Project </h2>
+        <div class="network-image">
+            <img src="" alt="">
+        </div>
+        <form>
+            <div>
+                <span class="errorText"></span>
+                <input type="tel" name="entry" id="phonie" title="This input only verifies airtel numbers" maxlength="" pattern="(\+?(234)?0?)(70[18]|80[28]|90[127]|812)(\d{7})?" oninput="reportValidity()">
+                <span class="networkIcon"></span>
+            </div>
+            <input type="button" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
